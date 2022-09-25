@@ -1,0 +1,12 @@
+{
+  "name": "Props",
+  "version": "1.0.0",
+  "description": "Description of React Props",
+  "main": "index.js",
+  "author": "Can Guven",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "prettier": "^2.6.2"
+  }
+}
