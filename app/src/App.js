@@ -7,6 +7,7 @@ import Data from "./components/Data";
 function App() {
   const [state, setState] = useState({ clicked: true });
   const [count, setCount] = useState(0);
+  console.log(count)
 
   // We Passed data to Children
   const data = {
