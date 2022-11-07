@@ -1,4 +1,4 @@
-// Lifting sate up ====> Update Parent Component State
+// Lifting sate up ====> Update Parent App Component State
 import React from "react";
 
 function MyComponent({ state, setState }) {
@@ -7,6 +7,7 @@ function MyComponent({ state, setState }) {
     setState(!state);
   }
 
+  // Conditional Rendering
   return (
     <div onClick={handleClick}>
       {state ? (
