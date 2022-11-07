@@ -10,12 +10,18 @@ const Card = () => {
   };
 
   function handleColor() {
-    setBackground("aqua");
-    setFont("red");
+    if (background === "#eee") {
+      setBackground("aqua");
+      setFont("red");
+    } else {
+      setBackground('#eee');
+      setFont('blue')
+    }
   }
 
   return (
     <div onClick={handleColor} style={defaultColor}>
+      Card State
       <h2>Set me different color</h2>
     </div>
   );

@@ -9,6 +9,10 @@ function App() {
   const [count, setCount] = useState(0);
   console.log(count)
 
+  function handleCount() {
+    return setCount((prev) => prev + 1);
+  }
+
   // We Passed data to Children
   const data = {
     title: "Optimus Prime",
@@ -19,8 +23,7 @@ function App() {
   return (
     <div className="App">
       <h2>{process.env.NODE_ENV}</h2>
-      {count ? <div>{count}</div> : " "}
-
+      <div onClick={handleCount}>{count}</div>
       {process.env.NODE_ENV === "development" && (
         <main className="App-header">
           <MyComponent setState={setState} state={state} />
