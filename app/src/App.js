@@ -23,7 +23,7 @@ function App() {
   return (
     <div className="App">
       <h2>{process.env.NODE_ENV}</h2>
-      <div onClick={handleCount}>{count}</div>
+      <div className='count' onClick={handleCount}>{count}</div>
       {process.env.NODE_ENV === "development" && (
         <main className="App-header">
           <MyComponent setState={setState} state={state} />

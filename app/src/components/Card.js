@@ -1,28 +1,24 @@
 import React, { useState } from "react";
 
 const Card = () => {
-  const [background, setBackground] = useState("#eee");
   const [font, setFont] = useState("blue");
 
   const defaultColor = {
-    backgroundColor: background,
     color: font,
   };
 
   function handleColor() {
-    if (background === "#eee") {
-      setBackground("aqua");
+    if (font === "blue") {
       setFont("red");
     } else {
-      setBackground('#eee');
-      setFont('blue')
+      setFont("blue");
     }
   }
 
   return (
-    <div onClick={handleColor} style={defaultColor}>
-      Card State
-      <h2>Set me different color</h2>
+    <div className="letterButton" onClick={handleColor} style={defaultColor}>
+      <h1>Card State</h1>
+      <p>Set me different color</p>
     </div>
   );
 };
